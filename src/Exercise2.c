@@ -26,6 +26,19 @@ int main(int argc, char *argv[]) {
 			testcase[i] = atoi(argv[i+1]);
 	}
 	//Your codes here
+int n,max=0,min=0;
+do{
+		printf("Nhap n: ");
+		scanf("%d",&n);
+		if (max<n&&n!=0){
+			max=n;
+		}
+		else if(min>n&&min!=0){
+			min=n;
+		}
+
+	}while (n!=0);
+	printf("Max:%d\n,Min:%d\n",max,min);
 
 	return 0;
 }
